@@ -12,7 +12,7 @@
     <div th:each="el:${posts}" class="allert allert-info mt-2">
         <h3 th:text="${el.title}"/>
         <p th:text="${el.anons}"/>
-        <a th:href="'/blog/' + ${el.id}" class="btn btn-warnning">Детальнее</a>
+        <button type="submit" class="btn btn-success"><a th:href="'/blog/' + ${el.id}" class="btn btn-warnning">Детальнее</a></button>
     </div>
 
 </div>
